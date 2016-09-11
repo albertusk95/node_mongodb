@@ -67,10 +67,12 @@ function showUserInfo(event) {
 function addUser(event) {
     event.preventDefault();
 
-    // Super basic validation - increase errorCount variable if any fields are blank
+    // Increase errorCount variable if any fields are blank
     var errorCount = 0;
     $('#addUser input').each(function(index, val) {
-        if($(this).val() === '') { errorCount++; }
+        if($(this).val() === '') { 
+			errorCount++; 
+		}
     });
 
     // Check and make sure errorCount's still at zero
